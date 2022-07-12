@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space tourism</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <div class="container-lg">
+        <h1>Hola espacio</h1>
+        <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Hola, soy el título del popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>
